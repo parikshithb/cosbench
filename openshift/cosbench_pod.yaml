@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cosbench-pod
+  namespace: cosbench-project
+spec:
+  securityContext:
+    fsGroup: 2000
+  serviceAccountName: default
+  containers:
+  - name: cosbench
+    image: <image>
+    envFrom:
+      - configMapRef:
+          name: cosbench-config
+    ports:
+      - containerPort: 18088
