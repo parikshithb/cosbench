@@ -7,7 +7,6 @@ RUN apt-get update
 RUN apt-get install -y curl
 
 # COSBench driver port
-
 EXPOSE 18088
 
 # COSBench controller port
