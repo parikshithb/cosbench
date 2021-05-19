@@ -3,7 +3,6 @@ RUN apk --no-cache add curl
 RUN apk add --no-cache --upgrade bash
 
 # COSBench driver port
-
 EXPOSE 18088
 
 # COSBench controller port
