@@ -8,4 +8,4 @@ Cosbench
 2. Build docker image: docker build --tag <repo>:latest --file Dockerfile .
 
 ## Create configmap and pod on openshift
-  oc create -f <yaml>
+  oc create -f file.yaml
